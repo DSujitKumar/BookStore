@@ -1,0 +1,20 @@
+F:\BookStore\Book Store\bin\Debug\netcoreapp3.1\appsettings.Development.json
+F:\BookStore\Book Store\bin\Debug\netcoreapp3.1\appsettings.json
+F:\BookStore\Book Store\bin\Debug\netcoreapp3.1\Book Store.exe
+F:\BookStore\Book Store\bin\Debug\netcoreapp3.1\Book Store.deps.json
+F:\BookStore\Book Store\bin\Debug\netcoreapp3.1\Book Store.runtimeconfig.json
+F:\BookStore\Book Store\bin\Debug\netcoreapp3.1\Book Store.runtimeconfig.dev.json
+F:\BookStore\Book Store\bin\Debug\netcoreapp3.1\Book Store.dll
+F:\BookStore\Book Store\bin\Debug\netcoreapp3.1\Book Store.pdb
+F:\BookStore\Book Store\obj\Debug\netcoreapp3.1\Book Store.csprojAssemblyReference.cache
+F:\BookStore\Book Store\obj\Debug\netcoreapp3.1\Book Store.AssemblyInfoInputs.cache
+F:\BookStore\Book Store\obj\Debug\netcoreapp3.1\Book Store.AssemblyInfo.cs
+F:\BookStore\Book Store\obj\Debug\netcoreapp3.1\Book Store.csproj.CoreCompileInputs.cache
+F:\BookStore\Book Store\obj\Debug\netcoreapp3.1\Book Store.MvcApplicationPartsAssemblyInfo.cache
+F:\BookStore\Book Store\obj\Debug\netcoreapp3.1\staticwebassets\Book Store.StaticWebAssets.Manifest.cache
+F:\BookStore\Book Store\obj\Debug\netcoreapp3.1\staticwebassets\Book Store.StaticWebAssets.xml
+F:\BookStore\Book Store\obj\Debug\netcoreapp3.1\scopedcss\bundle\Book Store.styles.css
+F:\BookStore\Book Store\obj\Debug\netcoreapp3.1\Book Store.RazorTargetAssemblyInfo.cache
+F:\BookStore\Book Store\obj\Debug\netcoreapp3.1\Book Store.dll
+F:\BookStore\Book Store\obj\Debug\netcoreapp3.1\Book Store.pdb
+F:\BookStore\Book Store\obj\Debug\netcoreapp3.1\Book Store.genruntimeconfig.cache
