@@ -1,44 +1,26 @@
-using BooksAPI.DLL;
-using Microsoft.EntityFrameworkCore;
-using MediatR;
-using BooksAPI.Interfaces;
-using BooksAPI.BLLServices;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-internal class Program
+namespace Book_Store
 {
-    private static void Main(string[] args)
+    public class Program
     {
-        var builder = WebApplication.CreateBuilder(args);
-
-        // Add services to the container.
-
-        builder.Services.AddControllers();
-
-        // Adding DB Context
-        builder.Services.AddDbContext<BookStoreDBContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("BookStoreConnection")), ServiceLifetime.Singleton);
-
-        // implementing MediatR dependancy 
-        builder.Services.AddMediatR(cf => cf.RegisterServicesFromAssembly(typeof(Program).Assembly));
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-        builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen();
-        builder.Services.AddTransient<AddRecords,AddRecordsService>();
-        builder.Services.AddTransient<FetchRecord,FetchRecordService>();
-
-        var app = builder.Build();
-
-        // Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
+        public static void Main(string[] args)
         {
-            app.UseSwagger();
-            app.UseSwaggerUI();
+            CreateHostBuilder(args).Build().Run();
         }
 
-        app.UseAuthorization();
-
-        app.MapControllers();
-
-        app.Run();
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
     }
 }
